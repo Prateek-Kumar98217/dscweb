@@ -7,9 +7,9 @@ import { Github, Linkedin, Twitter, ArrowLeft } from "lucide-react"
 const teamMembers: Record<number, any> = {
   1: {
     id: 1,
-    name: "Rajesh Kumar",
-    role: "Lead - Technical",
-    image: "/professional-developer-man.jpg",
+    name: "Bhavishya Ratna",
+    role: "President",
+    image: "/Django.jpg",
     bio: "Passionate full-stack developer with 5+ years of experience in building scalable web applications.",
     fullBio:
       "Rajesh Kumar is a visionary technical leader with expertise in modern web technologies and cloud architecture. He leads our technical initiatives and mentors aspiring developers at DSC BVCOE. Outside of DSC, he contributes to open-source projects and speaks at tech conferences.",
@@ -212,7 +212,7 @@ export default function TeamMemberDetail({ memberId }: { memberId: number }) {
   }
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background">
+    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background">
       <div className="max-w-4xl mx-auto">
         {/* Back Link */}
         <Link
@@ -288,7 +288,7 @@ export default function TeamMemberDetail({ memberId }: { memberId: number }) {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
+          <div className="h-px bg-linear-to-r from-transparent via-cyan-500/30 to-transparent" />
 
           {/* Full Bio Section */}
           <div className="p-8 md:p-12 space-y-8">
@@ -301,7 +301,7 @@ export default function TeamMemberDetail({ memberId }: { memberId: number }) {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-foreground">Skills & Expertise</h2>
               <div className="flex flex-wrap gap-3">
-                {member.skills.map((skill) => (
+                {member.skills.map((skill: string) => (
                   <span
                     key={skill}
                     className="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 hover:border-cyan-400 transition-colors cursor-default"
@@ -316,7 +316,7 @@ export default function TeamMemberDetail({ memberId }: { memberId: number }) {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-foreground">Achievements</h2>
               <ul className="space-y-3">
-                {member.achievements.map((achievement, idx) => (
+                {member.achievements.map((achievement: string, idx: number) => (
                   <li key={idx} className="flex gap-3 text-foreground/70">
                     <span className="text-cyan-400 font-bold mt-1">✓</span>
                     <span className="text-lg">{achievement}</span>

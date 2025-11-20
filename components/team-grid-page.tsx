@@ -7,8 +7,8 @@ import TeamMemberCard from "@/components/team-member-card"
 const teamMembers = [
   {
     id: 1,
-    name: "Rajesh Kumar",
-    role: "Lead - Technical",
+    name: "Bhavishya Ratna",
+    role: "President",
     image: "/Django.jpg",
     bio: "Passionate full-stack developer with expertise in web technologies and system design.",
     skills: ["React", "Node.js", "Python", "Cloud Architecture"],
@@ -20,8 +20,8 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Priya Singh",
-    role: "Lead - Events",
+    name: "Anisha Garg",
+    role: "Vice President",
     image: "/anisha.jpg",
     bio: "Creative event organizer with a knack for building engaging community experiences.",
     skills: ["Event Planning", "Community Building", "Communication", "Leadership"],
@@ -33,9 +33,9 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Amit Patel",
-    role: "Lead - Community",
-    image: "/jatin_placement.jpg",
+    name: "Anshul Gupta",
+    role: "Event Management Lead",
+    image: "/anshul.jpg",
     bio: "Dedicated community builder focused on creating inclusive learning environments.",
     skills: ["Mentoring", "Community Management", "DevOps", "Docker"],
     socialLinks: {
@@ -46,9 +46,9 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Neha Sharma",
-    role: "Lead - Outreach",
-    image: "/yash.webp",
+    name: "Jatin Prabhakar",
+    role: "Technical Lead",
+    image: "/jatin_placement.jpg",
     bio: "Strategic thinker with experience in expanding community reach and partnerships.",
     skills: ["Strategic Planning", "Partnerships", "Marketing", "Data Analytics"],
     socialLinks: {
@@ -59,8 +59,8 @@ const teamMembers = [
   },
   {
     id: 5,
-    name: "Vikram Desai",
-    role: "Lead - Workshops",
+    name: "Dhruv Kashyap",
+    role: "Creative Lead",
     image: "/dhruv.webp",
     bio: "Expert trainer passionate about transferring knowledge through interactive workshops.",
     skills: ["AI/ML", "Workshop Design", "Public Speaking", "Mentoring"],
@@ -72,9 +72,9 @@ const teamMembers = [
   },
   {
     id: 6,
-    name: "Anjali Verma",
-    role: "Lead - Operations",
-    image: "/anshul.jpg",
+    name: "Yash Nagpal",
+    role: "Outreach Lead",
+    image: "/yash.webp",
     bio: "Operations specialist ensuring smooth execution of all DSC initiatives.",
     skills: ["Project Management", "Operations", "Finance", "Admin"],
     socialLinks: {

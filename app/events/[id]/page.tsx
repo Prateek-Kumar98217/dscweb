@@ -7,12 +7,14 @@ export const metadata = {
   description: "View detailed information about our events",
 }
 
-export default function EventPage({ params }: { params: { id: string } }) {
+export default async function EventPage({ params }: { params: { id: string } }) {
+  const { id } = await params;
+  const eventId = Number(id);
   return (
     <main className="overflow-hidden">
       <Navbar />
       <div className="pt-20">
-        <EventDetail eventId={Number.parseInt(params.id)} />
+        <EventDetail eventId={eventId} />
       </div>
       <Footer />
     </main>

@@ -9,6 +9,7 @@ import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import AnimatedBackground from "@/components/animated-background"
+import MentorSection from "@/components/mentor-section"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <FeaturesSection />
       </div>
       <AboutSection />
+      <MentorSection />
       <TeamSection />
       <EventsSection />
       <div id="join">

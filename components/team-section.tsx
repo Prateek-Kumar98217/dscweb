@@ -59,7 +59,7 @@ export default function TeamSection() {
   return (
     <section
       id="team"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
