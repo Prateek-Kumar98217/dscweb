@@ -31,7 +31,7 @@ export default function GalleryGrid() {
     <div ref={ref} className="w-full py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+          <h3 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
             Gallery Highlights
           </h3>
           <p className="text-slate-400 text-lg">Moments from our amazing community</p>
@@ -41,20 +41,20 @@ export default function GalleryGrid() {
           {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className={`group cursor-pointer relative aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-blue-900/30 to-slate-900 border border-cyan-500/20 hover:border-cyan-400/60 transition-all duration-500 ${
+              className={`group cursor-pointer relative aspect-square rounded-lg overflow-hidden bg-linear-to-br from-blue-900/30 to-slate-900 border border-cyan-500/20 hover:border-cyan-400/60 transition-all duration-500 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
               style={{
                 transitionDelay: isVisible ? `${item.delay}ms` : "0ms",
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10 group-hover:from-cyan-500/20 group-hover:to-blue-500/20 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-cyan-500/10 via-transparent to-blue-500/10 group-hover:from-cyan-500/20 group-hover:to-blue-500/20 transition-all duration-500"></div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+              <div className="relative w-full h-full bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-linear-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                     <svg className="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"

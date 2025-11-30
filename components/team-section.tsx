@@ -1,6 +1,8 @@
 "use client"
 
+import { ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 const teamMembers = [
   {
@@ -103,6 +105,16 @@ export default function TeamSection() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto flex justify-center mt-12">
+        <div className="text-center mb-16">
+          <Link href="/team">
+            <button className="px-8 py-3 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-2 group">
+              Meet the Full Team
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,27 +1,29 @@
 "use client"
 
+import { ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 const events = [
   {
     title: "Hackathon 2025",
     description: "A 24-hour coding marathon where you can showcase your skills and build innovative solutions.",
-    image: "/hackathon-coding-event.jpg",
+    image: "/placeholder.jpg",
   },
   {
     title: "AI & ML Workshop",
     description: "Learn the fundamentals of Artificial Intelligence and Machine Learning with hands-on projects.",
-    image: "/ai-machine-learning-workshop.jpg",
+    image: "/placeholder.jpg",
   },
   {
     title: "Web Development Summit",
     description: "Explore modern web technologies, frameworks, and best practices from industry experts.",
-    image: "/web-development-conference.png",
+    image: "/placeholder.jpg",
   },
   {
     title: "Bootcamp Series",
     description: "Intensive training sessions covering full-stack development and cloud technologies.",
-    image: "/programming-bootcamp-training.jpg",
+    image: "/placeholder.jpg",
   },
 ]
 
@@ -90,6 +92,16 @@ export default function EventsSection() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto flex justify-center mt-12">
+        <div className="text-center mb-16">
+          <Link href="/events">
+            <button className="px-8 py-3 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-2 group">
+              Learn More
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
         </div>
       </div>
     </section>

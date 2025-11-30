@@ -124,7 +124,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
   }
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background">
+    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background">
       <div className="max-w-5xl mx-auto">
         {/* Back Link */}
         <Link
@@ -144,7 +144,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
           {/* Hero Image */}
           <div className="aspect-video overflow-hidden bg-blue-900/30 relative">
             <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />
             <div className="absolute top-4 left-4 px-4 py-2 bg-cyan-500/80 rounded-full text-sm font-semibold text-foreground">
               {event.category}
             </div>
@@ -191,7 +191,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent mb-8" />
+            <div className="h-px bg-linear-to-r from-transparent via-cyan-500/30 to-transparent mb-8" />
 
             {/* Full Details */}
             <div className="space-y-8 mb-8">
@@ -207,7 +207,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
                   <div className="space-y-3">
                     {event.agenda.map((item: string, idx: number) => (
                       <div key={idx} className="flex gap-4">
-                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/30 border border-cyan-500/50 flex items-center justify-center text-cyan-400 font-semibold">
+                        <div className="shrink-0 w-8 h-8 rounded-full bg-cyan-500/30 border border-cyan-500/50 flex items-center justify-center text-cyan-400 font-semibold">
                           {idx + 1}
                         </div>
                         <p className="text-foreground/80 mt-1">{item}</p>
@@ -282,13 +282,13 @@ export default function EventDetail({ eventId }: { eventId: number }) {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent mb-8" />
+            <div className="h-px bg-linear-to-r from-transparent via-cyan-500/30 to-transparent mb-8" />
 
             {/* CTA Buttons */}
             <div className="flex gap-4">
               <a
                 href={event.registrationUrl}
-                className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 rounded-lg font-bold text-background transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-3 bg-linear-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 rounded-lg font-bold text-background transition-all duration-300 transform hover:scale-105"
               >
                 Register Now
               </a>

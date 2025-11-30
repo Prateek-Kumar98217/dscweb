@@ -26,7 +26,7 @@ export default function JoinSection() {
   return (
     <section
       id="join"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900/20 via-cyan-900/20 to-blue-900/20"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-blue-900/20 via-cyan-900/20 to-blue-900/20"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2
@@ -45,7 +45,7 @@ export default function JoinSection() {
           collaborate on projects, and unlock your full potential.
         </p>
         <button
-          className={`px-12 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-background rounded-full font-bold text-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-110 ${
+          className={`px-12 py-4 bg-linear-to-r from-blue-500 to-cyan-500 text-background rounded-full font-bold text-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-110 ${
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
           }`}
         >

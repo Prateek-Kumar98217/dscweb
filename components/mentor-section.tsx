@@ -26,7 +26,7 @@ export default function MentorSection() {
   return (
     <section
       id="team"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -55,12 +55,12 @@ export default function MentorSection() {
               <div className="aspect-square overflow-hidden bg-blue-900/30">
                 <img
                   src="/placeholder.svg"
-                  alt="Mentor Name"
+                  alt="Dr. Alka Leekha"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-foreground mb-2">Mentor Name</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">Dr. Alka Leekha</h3>
                 <p className="text-cyan-400 font-medium">Society Mentor</p>
               </div>
             </div>

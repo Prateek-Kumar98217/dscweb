@@ -2,7 +2,6 @@ import Navbar from "@/components/navbar"
 import TeamGridPage from "@/components/team-grid-page"
 import Footer from "@/components/footer"
 import GroupGallery from "@/components/group-gallery"
-import GalleryGrid from "@/components/gallery-grid"
 
 export const metadata = {
   title: "Team | DSC BVCOE",
