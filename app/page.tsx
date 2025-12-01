@@ -15,10 +15,9 @@ export default function Home() {
       <AnimatedBackground />
       <Navbar />
       <HeroSection />
-      <AboutSection />
+      <EventsSection />
       <MentorSection />
       <TeamSection />
-      <EventsSection />
       <ContactSection />
       <Footer />
       <ScrollToTop />

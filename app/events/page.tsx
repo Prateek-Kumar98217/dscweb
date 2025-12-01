@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar"
 import EventsGridPage from "@/components/events-grid-page"
 import Footer from "@/components/footer"
+import ScrollToTop from "@/components/scroll-to-top"
 
 export const metadata = {
   title: "Events | DSC BVCOE",
@@ -15,6 +16,7 @@ export default function EventsPage() {
         <EventsGridPage />
       </div>
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }

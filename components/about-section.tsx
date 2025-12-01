@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -25,7 +26,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto ">
         <h2
           className={`text-4xl md:text-5xl font-bold mb-8 text-center transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -33,7 +34,11 @@ export default function AboutSection() {
         >
           About <span className="glow-text">DSC BVCOE</span>
         </h2>
-
+        <div className="text-center mb-16">
+        <Link href="/" className="inline-block text-cyan-400 hover:text-cyan-300 transition-colors">
+           ← Back to Home
+        </Link>
+        </div>
         <div
           className={`bg-card-gradient border border-cyan-500/20 rounded-2xl p-8 md:p-12 glow-border transition-all duration-700 ${
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"

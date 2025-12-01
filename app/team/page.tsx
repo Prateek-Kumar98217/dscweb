@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar"
 import TeamGridPage from "@/components/team-grid-page"
 import Footer from "@/components/footer"
 import GroupGallery from "@/components/group-gallery"
+import ScrollToTop from "@/components/scroll-to-top"
 
 export const metadata = {
   title: "Team | DSC BVCOE",
@@ -30,6 +31,7 @@ export default function TeamPage() {
         <TeamGridPage />
       </div>
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }
