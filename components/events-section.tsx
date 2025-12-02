@@ -15,16 +15,6 @@ const events = [
     description: "Learn the fundamentals of Artificial Intelligence and Machine Learning with hands-on projects.",
     image: "/placeholder.jpg",
   },
-  {
-    title: "Web Development Summit",
-    description: "Explore modern web technologies, frameworks, and best practices from industry experts.",
-    image: "/placeholder.jpg",
-  },
-  {
-    title: "Bootcamp Series",
-    description: "Intensive training sessions covering full-stack development and cloud technologies.",
-    image: "/placeholder.jpg",
-  },
 ]
 
 export default function EventsSection() {
@@ -57,7 +47,7 @@ export default function EventsSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Upcoming <span className="glow-text">Events</span>
+            Our Recent <span className="glow-text">Events</span>
           </h2>
           <p
             className={`text-lg text-foreground/60 transition-all duration-700 delay-100 ${

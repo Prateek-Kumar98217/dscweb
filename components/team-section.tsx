@@ -111,7 +111,7 @@ export default function TeamSection() {
         <div className="text-center mb-16">
           <Link href="/team">
             <button className="px-8 py-3 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-2 group">
-              Meet the Full Team
+              Meet the Team
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </Link>

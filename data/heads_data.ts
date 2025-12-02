@@ -93,7 +93,7 @@ export const headsData = [
   {
     id: 8,
     name: "Aditya Tyagi",
-    role: "Outreach Lead",
+    role: "Event Management Head",
     image: "/tyagi.jpg",
     bio: "Operations specialist ensuring smooth execution of all DSC initiatives.",
     skills: ["Project Management", "Operations", "Finance", "Admin"],

@@ -41,7 +41,7 @@ export default function HeroSection() {
           </Link>
           <Link href="/events">
             <button className="px-8 py-3 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-2 group">
-              Explore our Events
+              Explore Our Events
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </Link>

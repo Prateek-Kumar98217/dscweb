@@ -54,9 +54,9 @@ export default function MentorSection() {
             >
               <div className="aspect-square overflow-hidden bg-blue-900/30">
                 <img
-                  src="/placeholder.svg"
+                  src="/logo.png"
                   alt="Dr. Alka Leekha"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6 text-center">
