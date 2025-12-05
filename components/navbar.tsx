@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +21,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold glow-text hover:opacity-80 transition-opacity">
+            <Link href="/" className="text-xl font-bold glow-text hover:opacity-70 transition-opacity">
+            <Image src="/logo.png" alt="DSC BVCOE" width={30} height={30} className="inline-block mr-2 mb-1"/>
               DSC BVCOE
             </Link>
           </div>
@@ -30,7 +32,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <Link
                 key={item.label}
-                href={item.href}
+                href={item.href}  
                 className="text-foreground/80 hover:text-cyan-400 transition-colors duration-300 font-medium"
               >
                 {item.label}

@@ -3,39 +3,7 @@
 import { ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
 import Link from "next/link"
-
-const teamMembers = [
-  {
-    name: "Bhavishya Ratna",
-    role: "President",
-    image: "/Django.jpg",
-  },
-  {
-    name: "Anisha Garg",
-    role: "Vice President",
-    image: "/anisha.jpg",
-  },
-  {
-    name: "Anshul Gupta",
-    role: "Event Management Head",
-    image: "/anshul.jpg",
-  },
-  {
-    name: "Jatin Prabhakar",
-    role: "Techinical Lead",
-    image: "/jatin_placement.jpg",
-  },
-  {
-    name: "Dhruv Kashyap",
-    role: "Creative Lead",
-    image: "/dhruv.webp",
-  },
-  {
-    name: "Yash Nagpal",
-    role: "Outreach Lead",
-    image: "/yash.webp",
-  },
-]
+import Image from "next/image"
 
 export default function TeamSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -80,32 +48,25 @@ export default function TeamSection() {
             The passionate minds behind DSC BVCOE
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className={`card-gradient border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-              style={{
-                transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
-              }}
-            >
-              <div className="aspect-square overflow-hidden bg-blue-900/30">
-                <img
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-foreground mb-2">{member.name}</h3>
-                <p className="text-cyan-400 font-medium">{member.role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <div className="relative group">
+                    <div className="absolute inset-0 bg-linear-to-br from-cyan-500/20 via-blue-500/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                    <div className="relative bg-slate-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-2xl overflow-hidden p-1">
+                      <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+                        <Image
+                          src="group_photo_full_adjusted.jpg"
+                          alt="Group Photo of the Core Team"
+                          fill
+                          className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
+                          priority
+                        />
+                        <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                      </div>
+                    </div>
+                    <div className="absolute -top-2 -left-2 w-8 h-8 border-2 border-cyan-400 rounded-tl-lg"></div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 border-2 border-cyan-400 rounded-tr-lg"></div>
+                    <div className="absolute -bottom-2 -left-2 w-8 h-8 border-2 border-cyan-400 rounded-bl-lg"></div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 border-2 border-cyan-400 rounded-br-lg"></div>
+                  </div>
       </div>
       <div className="max-w-6xl mx-auto flex justify-center mt-12">
         <div className="text-center mb-16">
@@ -118,5 +79,5 @@ export default function TeamSection() {
         </div>
       </div>
     </section>
-  )
+    )
 }

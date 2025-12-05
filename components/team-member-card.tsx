@@ -9,7 +9,7 @@ interface TeamMember {
   image: string
   bio: string
   skills: string[]
-  socialLinks: Record<string, string>
+  socialLink: string
 }
 
 interface TeamMemberCardProps {
@@ -20,7 +20,6 @@ interface TeamMemberCardProps {
 
 export default function TeamMemberCard({ member, index, isVisible }: TeamMemberCardProps) {
   return (
-    <Link href={`/team/${member.id}`}>
       <div
         className={`card-gradient border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 cursor-pointer group h-full ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -29,6 +28,7 @@ export default function TeamMemberCard({ member, index, isVisible }: TeamMemberC
           transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
         }}
       >
+        <Link href={member.socialLink} >
         {/* Image Section */}
         <div className="aspect-square overflow-hidden bg-blue-900/30 relative">
           <img
@@ -59,12 +59,11 @@ export default function TeamMemberCard({ member, index, isVisible }: TeamMemberC
             ))}
           </div>
 
-          {/* Click to view full profile */}
           <div className="text-sm text-cyan-400 group-hover:text-cyan-300 flex items-center gap-2">
-            View Full Profile →
+            CONNECT
           </div>
         </div>
+        </Link>
       </div>
-    </Link>
   )
 }

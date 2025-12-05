@@ -28,7 +28,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background"
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
@@ -77,7 +77,7 @@ export default function ContactSection() {
             </div>
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-background rounded-lg font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105"
+              className="w-full px-6 py-3 bg-linear-to-r from-blue-500 to-cyan-500 text-background rounded-lg font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105"
             >
               Send Message
             </button>

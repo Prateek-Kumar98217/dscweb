@@ -35,27 +35,13 @@ export default function GroupGallery({ title, description, image }: PhotoGallery
               <div className="h-1 w-20 bg-linear-to-r from-cyan-400 to-blue-500 rounded-full"></div>
             </div>
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl">{description}</p>
-            <div className="space-y-4 pt-4">
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span className="text-slate-300">Collaboration & Innovation</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span className="text-slate-300">Community Driven Excellence</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span className="text-slate-300">Building the Future Together</span>
-              </div>
-            </div>
           </div>
 
           {/* Image Content */}
           <div className={`${isLoaded ? "animate-slide-in-right" : ""} relative group`}>
             <div className="absolute inset-0 bg-linear-to-br from-cyan-500/20 via-blue-500/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
             <div className="relative bg-slate-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-2xl overflow-hidden p-1">
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-square rounded-xl overflow-hidden">
                 <Image
                   src={image || "/placeholder.svg"}
                   alt={title}

@@ -47,7 +47,7 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-900/5 to-background"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
                   transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
                 }}
               >
-                <div className="mb-4 p-3 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 w-fit rounded-lg group-hover:shadow-lg group-hover:shadow-cyan-500/30 transition-all">
+                <div className="mb-4 p-3 bg-linear-to-br from-blue-500/20 to-cyan-500/20 w-fit rounded-lg group-hover:shadow-lg group-hover:shadow-cyan-500/30 transition-all">
                   <Icon className="w-8 h-8 text-cyan-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-foreground">{feature.title}</h3>
