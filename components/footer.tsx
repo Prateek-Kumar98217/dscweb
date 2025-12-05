@@ -1,5 +1,3 @@
-import { Heart } from "lucide-react"
-
 export default function Footer() {
   return (
     <footer className="bg-card border-t border-cyan-500/20 py-12 px-4 sm:px-6 lg:px-8 backdrop-blur-sm">
@@ -53,9 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-cyan-500/10 pt-8 text-center text-foreground/60 flex items-center justify-center gap-2 flex-wrap">
-          <span>© 2025 Developer Student Club BVCOE | Built with</span>
-          <Heart size={16} className="text-cyan-400 animate-pulse" />
-          <span>by DetXonr</span>
+          <span>© 2025 Developer Student Club BVCOE | Built by SPIDERMAN</span>
         </div>
       </div>
     </footer>

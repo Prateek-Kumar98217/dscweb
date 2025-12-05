@@ -90,7 +90,7 @@
 
 @layer components {
   .glow-text {
-    @apply text-blue-500 bg-clip-text;
+    @apply  text-blue-500 bg-clip-text;
   }
 
   .glow-border {

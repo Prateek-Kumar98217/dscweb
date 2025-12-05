@@ -3,19 +3,7 @@
 import { ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
 import Link from "next/link"
-
-const events = [
-  {
-    title: "Hackathon 2025",
-    description: "A 24-hour coding marathon where you can showcase your skills and build innovative solutions.",
-    image: "/placeholder.jpg",
-  },
-  {
-    title: "AI & ML Workshop",
-    description: "Learn the fundamentals of Artificial Intelligence and Machine Learning with hands-on projects.",
-    image: "/placeholder.jpg",
-  },
-]
+import { recentEvents } from "@/data/events_data"
 
 export default function EventsSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -59,7 +47,7 @@ export default function EventsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {events.map((event, index) => (
+          {recentEvents.map((event, index) => (
             <div
               key={index}
               className={`card-gradient border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 group ${
