@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react"
 import Link from "next/link"
 
 interface TeamMember {
@@ -26,7 +27,6 @@ export default function TeamMemberCard({ member, index, isVisible }: TeamMemberC
           transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
         }}
       >
-        <Link href={member.socialLink} >
         {/* Image Section */}
         <div className="aspect-square overflow-hidden bg-blue-900/30 relative">
           <img
@@ -44,24 +44,13 @@ export default function TeamMemberCard({ member, index, isVisible }: TeamMemberC
           </h3>
           <p className="text-cyan-400 font-medium mb-3">{member.role}</p>
           <p className="text-foreground/70 text-sm mb-4 line-clamp-2">{member.bio}</p>
-
-          {/* Skills */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {member.skills.slice(0, 2).map((skill) => (
-              <span
-                key={skill}
-                className="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-
-          <div className="text-sm text-cyan-400 group-hover:text-cyan-300 flex items-center gap-2">
+           <Link href={member.socialLink} >
+            <div className="ext-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 flex items-center gap-2 w-max mx-auto hover:bg-cyan-500/30 transition-colors">
+            <Linkedin />
             CONNECT
           </div>
+          </Link>
         </div>
-        </Link>
       </div>
   )
 }

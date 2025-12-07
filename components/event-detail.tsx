@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Calendar, MapPin, Users, Trophy, Clock, ArrowLeft, Share2 } from "lucide-react"
+import { Calendar, MapPin, Users, Trophy, Clock, ArrowLeft, Medal } from "lucide-react"
 import  { eventsData } from "@/data/events_data"
 
 export default function EventDetail({ eventId }: { eventId: number }) {
@@ -87,7 +87,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
               <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 flex items-center gap-4">
                 <Users className="text-cyan-400" size={24} />
                 <div>
-                  <p className="text-foreground/60 text-sm">Expected Participants</p>
+                  <p className="text-foreground/60 text-sm">Participants</p>
                   <p className="text-foreground font-semibold">{event.participants}</p>
                 </div>
               </div>
@@ -120,17 +120,18 @@ export default function EventDetail({ eventId }: { eventId: number }) {
                 </div>
               )}
 
-              {/* Prizes */}
-              {event.prizes && (
+              {/* Winners */}
+              {event.winners && (
                 <div>
                   <h2 className="text-3xl font-bold mb-4 text-foreground flex items-center gap-2">
                     <Trophy className="text-cyan-400" />
-                    Prizes
+                    Winners
                   </h2>
                   <div className="space-y-2">
-                    {event.prizes.map((prize: string, idx: number) => (
-                      <p key={idx} className="text-lg text-foreground/80">
-                        {prize}
+                    {event.winners.map((winner: string, idx: number) => (
+                      <p key={idx} className="text-lg text-foreground/80 flex gap-2 items-center">
+                        <Medal />
+                        {winner}
                       </p>
                     ))}
                   </div>
@@ -188,18 +189,20 @@ export default function EventDetail({ eventId }: { eventId: number }) {
             <div className="h-px bg-linear-to-r from-transparent via-cyan-500/30 to-transparent mb-8" />
 
             {/* CTA Buttons */}
-            <div className="flex gap-4">
+            {event.status !== "Completed"? (
+              <div className="flex gap-4">
               <a
-                href={event.registrationUrl}
+                href={event.registrationUrl && event.status !== "Completed"}
                 className="px-8 py-3 bg-linear-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 rounded-lg font-bold text-background transition-all duration-300 transform hover:scale-105"
               >
                 Register Now
               </a>
-              <button className="px-8 py-3 bg-cyan-500/20 hover:bg-cyan-500/40 border border-cyan-500/50 rounded-lg font-bold text-foreground transition-all duration-300 flex items-center gap-2">
-                <Share2 size={20} />
-                Share
-              </button>
             </div>
+            ) : (
+              <div className="text-center py-4 px-6 bg-green-500/10 border border-green-500/30 rounded-lg">
+                <p className="text-green-400 font-semibold">This event has been completed. Stay tuned for upcoming events!</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

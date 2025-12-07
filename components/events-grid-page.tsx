@@ -13,7 +13,7 @@ export default function EventsGridPage() {
     setIsVisible(true)
   }, [])
 
-  const categories = ["All", "Workshop", "Competition", "Conference", "Bootcamp"]
+  const categories = ["All", "Completed", "Upcoming"]
   const filteredEvents =
     selectedCategory && selectedCategory !== "All"
       ? allEvents.filter((event) => event.category === selectedCategory)
@@ -68,7 +68,7 @@ export default function EventsGridPage() {
         {/* No Results */}
         {filteredEvents.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-2xl text-foreground/60">No events found in this category.</p>
+            <p className="text-2xl text-foreground/60">{`No ${selectedCategory ?? "All"} events found`}</p>
           </div>
         )}
       </div>

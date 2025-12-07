@@ -5,7 +5,6 @@ export const headsData = [
     role: "Content and Documentation",
     image: "/manik.jpg",
     bio: "Crafting clear, compelling narratives that define our voice and vision.",
-    skills: ["Event Planning", "Community Building", "Communication", "Leadership"],
     socialLink: "https://www.linkedin.com/in/manik-jindal-273420317"
   },
   {
@@ -14,7 +13,6 @@ export const headsData = [
     role: "Content and Documentation",
     image: "/abhilasha.jpeg",
     bio: "Transforming ideas into structured, meaningful content that informs and inspires.",
-    skills: ["Mentoring", "Community Management", "DevOps", "Docker"],
     socialLink: "https://www.linkedin.com/in/abhilasha-negi-65171a332"
   },
   {
@@ -23,7 +21,6 @@ export const headsData = [
     role: "Event Management",
     image: "/tyagi.jpg",
     bio: "Turning concepts into unforgettable experiences that bring the club together.",
-    skills: ["Project Management", "Operations", "Finance", "Admin"],
     socialLink: "https://www.linkedin.com/in/aditya-tyagi-003157333?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -32,7 +29,6 @@ export const headsData = [
     role: "Event Management",
     image: "/akshat.jpg",
     bio: "Coordinating seamless events that inspire participation, learning, and impact.",
-    skills: ["Strategic Planning", "Partnerships", "Marketing", "Data Analytics"],
     socialLink: "https://www.linkedin.com/in/khannnaakshat?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -41,7 +37,6 @@ export const headsData = [
     role: "Social Media",
     image: "/krish.jpg",
     bio: "Amplifying our presence and creating stories that connect with the world.",
-    skills: ["AI/ML", "Workshop Design", "Public Speaking", "Mentoring"],
     socialLink: "https://www.linkedin.com/in/krish-gupta-9220a8344/"
   },
   {
@@ -50,7 +45,6 @@ export const headsData = [
     role: "Social Media",
     image: "/saamiya.jpg",
     bio: "Building digital engagement through smart strategy and standout content.",
-    skills: ["Project Management", "Operations", "Finance", "Admin"],
     socialLink: "https://www.linkedin.com/in/saamiya-ahmad-92b018333?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -59,7 +53,6 @@ export const headsData = [
     role: "Design",
     image: "/manasi.jpg",
     bio: "Shaping visuals that elevate our identity and captivate our community.",
-    skills: ["Project Management", "Operations", "Finance", "Admin"],
     socialLink: "https://www.linkedin.com/in/manasi-s-pillai-1553012a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
   {
@@ -68,7 +61,6 @@ export const headsData = [
     role: "Sponsorship",
     image: "/aditya.jpg",
     bio: "Forging powerful partnerships and fueling the club's biggest opportunities.",
-    skills: ["React", "Node.js", "Python", "Cloud Architecture"],
     socialLink: "https://www.linkedin.com/in/aditya-yadav2005/"
   },
   {
@@ -77,7 +69,6 @@ export const headsData = [
     role: "Technical",
     image: "/spiderman.jpeg",
     bio: "Driving technical excellence and turning complex ideas into real-world solutions.",
-    skills: ["Project Management", "Operations", "Finance", "Admin"],
-    socialLink: "#"
+    socialLink: "https://www.linkedin.com/in/prateek-kumar-555178293/"
   },
 ]
