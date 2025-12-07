@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Calendar, MapPin, Users, Trophy, Clock, ArrowLeft, Medal } from "lucide-react"
 import  { eventsData } from "@/data/events_data"
+import { CarouselBase } from "./carousel"
 
 export default function EventDetail({ eventId }: { eventId: number }) {
   const [isVisible, setIsVisible] = useState(false)
@@ -46,7 +47,7 @@ export default function EventDetail({ eventId }: { eventId: number }) {
         >
           {/* Hero Image */}
           <div className="aspect-video overflow-hidden bg-blue-900/30 relative">
-            <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-full object-cover" />
+            <CarouselBase images={event.images} />
             <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />
             <div className="absolute top-4 left-4 px-4 py-2 bg-cyan-500/80 rounded-full text-sm font-semibold text-foreground">
               {event.category}
