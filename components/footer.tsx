@@ -49,9 +49,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <div className="border-t border-cyan-500/10 pt-8 text-center text-foreground/60 flex items-center justify-center gap-2 flex-wrap">
-          <span>© 2025 Developer Student Club BVCOE | Built by SPIDERMAN</span>
+          <span>© 2025 Developer Student Club BVCOE | Built by Jatin Prabhakar and Prateek Kumar</span>
         </div>
       </div>
     </footer>

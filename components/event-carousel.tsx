@@ -29,7 +29,7 @@ export function CarouselBase({ images }: CarouselBaseProps) {
         {images.map((image, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <img src={`/events/${image}`} alt={`image ${index + 1}`} className="w-full h-full object-cover"/>
+              <img src={`/events/${image}`} alt={`image ${index + 1}`} className="aspect-video object-cover"/>
             </div>
           </CarouselItem>
         ))}

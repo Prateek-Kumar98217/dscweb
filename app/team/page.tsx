@@ -15,7 +15,7 @@ export default function TeamPage() {
       <Navbar />
       <GroupGallery
         title="Our Mentor"
-        description= "Our mentor are experienced professionals and thought leaders who guide and empower our members to unlock their full potential. With their invaluable expertise and mentorship, they help shape the next generation of innovators, offering insights, advice, and real-world perspectives. Together, we foster an environment where learning, growth, and collaboration thrive, allowing students to navigate the exciting world of technology with confidence and creativity."
+        description="Dr. Alka Leekha is an experienced academic with over 21 years of teaching and a strong background in the tech industry. She holds a Ph.D. in Computer and Information Sciences and specializes in Data Security, Cloud Computing, Big Data Analytics, and Computer Vision. Dr. Leekha has taught a variety of courses including Big Data Analytics, Cryptography, and Software Engineering. As a mentor, she brings a wealth of knowledge to help students navigate the world of technology and innovation, offering guidance and real-world insights that empower students to excel and unlock their full potential."
         image="placeholder-logo.png"
         isFullSociety={false}
       />

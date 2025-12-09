@@ -75,7 +75,7 @@ export const headsData = [
     id: 10,
     name: "Prateek Kumar",
     role: "Technical",
-    image: "/team/spiderman.jpeg",
+    image: "/team/prateek.jpeg",
     bio: "Turning complex ideas into practical tech solutions.",
     socialLink: "https://www.linkedin.com/in/prateek-kumar-555178293/"
   },

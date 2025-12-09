@@ -2,11 +2,14 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 interface PhotoGalleryProps {
   title: string
   description: string
   image: string
+  link?: string
   isFullSociety?: boolean
 }
 
@@ -35,6 +38,12 @@ export default function GroupGallery({ title, description, image }: PhotoGallery
               <div className="h-1 w-20 bg-linear-to-r from-cyan-400 to-blue-500 rounded-full"></div>
             </div>
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl">{description}</p>
+            <Link href="https://scholar.google.com/citations?hl=en&user=R3Osse8AAAAJ&view_op=list_works&sortby=pubdate">
+            <button className="px-8 py-3 bg-linear-to-r from-blue-500 to-cyan-500 text-background rounded-full font-semibold hover:brightness-80 items-center gap-2 flex group">
+              Learn More
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
           </div>
 
           {/* Image Content */}
