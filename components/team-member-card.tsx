@@ -7,7 +7,7 @@ interface TeamMember {
   role: string
   image: string
   bio: string
-  skills: string[]
+  skills?: string[] 
   socialLink: string
 }
 
@@ -20,7 +20,7 @@ interface TeamMemberCardProps {
 export default function TeamMemberCard({ member, index, isVisible }: TeamMemberCardProps) {
   return (
       <div
-        className={`card-gradient border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 cursor-pointer group h-full ${
+        className={`card-gradient border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 cursor-pointer group h-full origin-center will-change-transform  ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
         style={{

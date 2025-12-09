@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Github, Linkedin, Instagram } from "lucide-react"
+import { Instagram, Youtube, Twitter } from "lucide-react"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -90,15 +90,15 @@ export default function ContactSection() {
 
               <div className="space-y-4 mb-8">
                 <div>
-                  <p className="text-foreground/70 text-sm font-semibold mb-1">Email</p>
-                  <a href="mailto:contact@dscbvcoe.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                    contact@dscbvcoe.com
+                  <p className="text-foreground/70 text-sm font-semibold mb-1">Join Us</p>
+                  <a href="https://chat.whatsapp.com/L59DJqdJuoI7FKZQTBr8nt?mode=ac_t" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    Support Group
                   </a>
                 </div>
                 <div>
                   <p className="text-foreground/70 text-sm font-semibold mb-1">Phone</p>
-                  <a href="tel:+919876543210" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                    +91 98765 43210
+                  <a href="tel:+918978976766" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                    +91 89789 76766
                   </a>
                 </div>
                 <div>
@@ -111,21 +111,21 @@ export default function ContactSection() {
                 <p className="text-foreground/70 text-sm font-semibold mb-4">Follow Us</p>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://x.com/dsc_bvp"
                     className="p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg hover:bg-cyan-500/20 hover:border-cyan-400 transition-all group"
                     title="GitHub"
                   >
-                    <Github size={20} className="text-cyan-400 group-hover:text-cyan-300" />
+                    <Twitter size={20} className="text-cyan-400 group-hover:text-cyan-300" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.youtube.com/@dscbvp4633"
                     className="p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg hover:bg-cyan-500/20 hover:border-cyan-400 transition-all group"
                     title="LinkedIn"
                   >
-                    <Linkedin size={20} className="text-cyan-400 group-hover:text-cyan-300" />
+                    <Youtube size={20} className="text-cyan-400 group-hover:text-cyan-300" />
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/gdscbvp?igsh=MXF3aW5tbzByMnRraQ=="
                     className="p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg hover:bg-cyan-500/20 hover:border-cyan-400 transition-all group"
                     title="Instagram"
                   >

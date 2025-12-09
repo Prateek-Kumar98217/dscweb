@@ -44,7 +44,7 @@ export const eventsData: Record<number, any> = {
     time: "10:00 AM - 3:00 PM",
     location: "B402, BVCOE Campus",
     category: "Competition",
-    participants: "500+",
+    participants: "300+",
     fullDetails:
       "This is a coding and logic-based competition designed to test problem-solving, programming skills, and logical reasoning. Participants will navigate through challenging rounds involving scavenger hunts, code puzzles, and jumbled code reconstruction.",
     agenda: [

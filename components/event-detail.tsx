@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Calendar, MapPin, Users, Trophy, Clock, ArrowLeft, Medal } from "lucide-react"
 import  { eventsData } from "@/data/events_data"
-import { CarouselBase } from "./carousel"
+import { CarouselBase } from "./event-carousel"
 
 export default function EventDetail({ eventId }: { eventId: number }) {
   const [isVisible, setIsVisible] = useState(false)

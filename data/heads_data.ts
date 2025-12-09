@@ -4,7 +4,7 @@ export const headsData = [
     name: "Manik Jindal",
     role: "Content and Documentation",
     image: "/team/manik.jpg",
-    bio: "Crafting clear, compelling narratives that define our voice and vision.",
+    bio: "Defining our voice with clear, impactful content.",
     socialLink: "https://www.linkedin.com/in/manik-jindal-273420317"
   },
   {
@@ -12,7 +12,7 @@ export const headsData = [
     name: "Abhilasha Negi",
     role: "Content and Documentation",
     image: "/team/abhilasha.jpeg",
-    bio: "Transforming ideas into structured, meaningful content that informs and inspires.",
+    bio: "Turning ideas into structured, engaging stories.",
     socialLink: "https://www.linkedin.com/in/abhilasha-negi-65171a332"
   },
   {
@@ -20,7 +20,7 @@ export const headsData = [
     name: "Aditya Tyagi",
     role: "Event Management",
     image: "/team/tyagi.jpg",
-    bio: "Turning concepts into unforgettable experiences that bring the club together.",
+    bio: "Creating events that inspire and connect the community.",
     socialLink: "https://www.linkedin.com/in/aditya-tyagi-003157333?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -28,7 +28,7 @@ export const headsData = [
     name: "Akshat Khanna",
     role: "Event Management",
     image: "/team/akshat.jpg",
-    bio: "Coordinating seamless events that inspire participation, learning, and impact.",
+    bio: "Ensuring smooth and impactful events for all members.",
     socialLink: "https://www.linkedin.com/in/khannnaakshat?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -36,7 +36,7 @@ export const headsData = [
     name: "Krish Gupta",
     role: "Social Media",
     image: "/team/krish.jpg",
-    bio: "Amplifying our presence and creating stories that connect with the world.",
+    bio: "Amplifying our story across digital platforms.",
     socialLink: "https://www.linkedin.com/in/krish-gupta-9220a8344/"
   },
   {
@@ -44,7 +44,7 @@ export const headsData = [
     name: "Saamiya Ahmad",
     role: "Social Media",
     image: "/team/saamiya.jpg",
-    bio: "Building digital engagement through smart strategy and standout content.",
+    bio: "Driving engagement with creative content strategies.",
     socialLink: "https://www.linkedin.com/in/saamiya-ahmad-92b018333?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   {
@@ -52,23 +52,31 @@ export const headsData = [
     name: "Manasi S Pillai",
     role: "Design",
     image: "/team/manasi.jpg",
-    bio: "Shaping visuals that elevate our identity and captivate our community.",
+    bio: "Crafting visuals that define our identity.",
     socialLink: "https://www.linkedin.com/in/manasi-s-pillai-1553012a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
   {
     id: 8,
-    name: "Aditya Yadav",
-    role: "Sponsorship",
-    image: "/team/aditya.jpg",
-    bio: "Forging powerful partnerships and fueling the club's biggest opportunities.",
-    socialLink: "https://www.linkedin.com/in/aditya-yadav2005/"
+    name: "Anant Pushkar",
+    role: "Design",
+    image: "/team/ap.jpeg",
+    bio: "Creating designs that captivate and inspire our community.",
+    socialLink: "www.linkedin.com/in/anant-pushkar-997a99354"
   },
   {
     id: 9,
-    name: "SPIDERMAN",
+    name: "Aditya Yadav",
+    role: "Sponsorship",
+    image: "/team/aditya.jpg",
+    bio: "Building partnerships that fuel the club’s growth.",
+    socialLink: "https://www.linkedin.com/in/aditya-yadav2005/"
+  },
+  {
+    id: 10,
+    name: "Prateek Kumar",
     role: "Technical",
     image: "/team/spiderman.jpeg",
-    bio: "Driving technical excellence and turning complex ideas into real-world solutions.",
+    bio: "Turning complex ideas into practical tech solutions.",
     socialLink: "https://www.linkedin.com/in/prateek-kumar-555178293/"
   },
 ]

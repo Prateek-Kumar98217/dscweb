@@ -13,22 +13,22 @@ export default function Footer() {
             <h3 className="text-foreground font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
+                <a href="/" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
+                <a href="/about" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="#events" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
+                <a href="/events" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
                   Events
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
+                <a href="/#contact" className="text-foreground/60 hover:text-cyan-400 text-sm transition-colors">
                   Contact
                 </a>
               </li>
@@ -37,11 +37,11 @@ export default function Footer() {
           <div>
             <h3 className="text-foreground font-bold text-lg mb-4">Connect</h3>
             <div className="flex gap-3">
-              <a href="#" className="text-foreground/60 hover:text-cyan-400 transition-colors text-sm">
-                GitHub
+              <a href="https://x.com/dsc_bvp" className="text-foreground/60 hover:text-cyan-400 transition-colors text-sm">
+                Twitter
               </a>
-              <a href="#" className="text-foreground/60 hover:text-cyan-400 transition-colors text-sm">
-                LinkedIn
+              <a href="https://www.youtube.com/@dscbvp4633" className="text-foreground/60 hover:text-cyan-400 transition-colors text-sm">
+                Youtube
               </a>
               <a href="https://www.instagram.com/gdscbvp?igsh=MXF3aW5tbzByMnRraQ==" className="text-foreground/60 hover:text-cyan-400 transition-colors text-sm">
                 Instagram

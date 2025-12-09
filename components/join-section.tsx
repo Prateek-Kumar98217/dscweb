@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function JoinSection() {
@@ -44,6 +45,7 @@ export default function JoinSection() {
           Become part of a thriving community of developers, innovators, and tech enthusiasts. Connect with mentors,
           collaborate on projects, and unlock your full potential.
         </p>
+        <Link href="https://chat.whatsapp.com/L59DJqdJuoI7FKZQTBr8nt?mode=ac_t">
         <button
           className={`px-12 py-4 bg-linear-to-r from-blue-500 to-cyan-500 text-background rounded-full font-bold text-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-110 ${
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
@@ -51,6 +53,7 @@ export default function JoinSection() {
         >
           Join DSC BVCOE Today
         </button>
+        </Link>
       </div>
     </section>
   )

@@ -14,7 +14,8 @@ export default function TeamGridPage() {
   }, [])
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background">
+    <section>
+      <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-6 bg-linear-to-b from-background via-blue-900/5 to-background">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
@@ -32,17 +33,21 @@ export default function TeamGridPage() {
             ← Back to Home
           </Link>
         </div>
-
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {coreData.map((member, index) => (
-            <TeamMemberCard key={member.id} member={member} index={index} isVisible={isVisible} />
+            <div className="w-full max-w-[300px]" key={member.id}>
+              <TeamMemberCard
+                member={member}
+                index={index}
+                isVisible={isVisible}
+              />
+            </div>
           ))}
         </div>
       </div>
+      </div>
       <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-background via-blue-900/5 to-background">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-20">
           <h1
             className={`text-5xl md:text-6xl font-bold mb-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
@@ -52,17 +57,21 @@ export default function TeamGridPage() {
           <p
             className={`text-xl text-foreground/60 mb-8 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Meet the visionary leaders driving DSC BVCOE forward
+            The minds behind our operational excellence
           </p>
           <Link href="/" className="inline-block text-cyan-400 hover:text-cyan-300 transition-colors">
             ← Back to Home
           </Link>
         </div>
-
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {headsData.map((member, index) => (
-            <TeamMemberCard key={member.id} member={member} index={index} isVisible={isVisible} />
+            <div className="w-full max-w-[300px]" key={member.id}>
+              <TeamMemberCard
+                member={member}
+                index={index}
+                isVisible={isVisible}
+              />
+            </div>
           ))}
         </div>
       </div>
